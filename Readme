@@ -1,0 +1,11 @@
+La idea general de mejorar la eficiencia de la lista con un arbol b es que al tener un arbol en lugar de una lista enlazada se hace una busqueda mas rapida y al validar con el hash no haber colisiones no habra nombres iguales,
+el arbol b ayudaria ya que no es secuencial y tiene una cantidad de lecturas menores ya que se va separando y dependiendo del tamaño de m el arbol sera mas ancho y menos alto asi no seria poco eficiente como un arbol avl,
+y como los hijos tienen que estar a la misma altura es un arbol que no se tiene que balancear continuamente como pasaba con el avl y como el arbol puede crecer horizontalmente y su numero de hijos es superior al del arbol avl este sera menos alto.
+
+
+pd. lo que intente hacer con el examen lo cual no pude realizar ya que el codigo de arbol b me parecio muy confuso desde que lo vi (parecia mas facil en la teoria) era crear un arreglo de niños donde iba a guardar la posicion de x llave en un nodo que se insertaba en el arbol dependiendo del valor en este caso el nombre (sacaria el numero con el hash siempre validando no nombres repetidos)
+cuando buscara x llave tendria guardada la posicion en el arreglo e iria a leer esa posicion los valores que estaban guardados (arreglo tipo niño).
+en la segunda funcion que seria agregar regalo a un niño en particular se llamaria a la funcion buscar en el arbol se leeria la posicion y se actualizarian los datos no sin antes validar que el niño se haya portado bien, con esto utilizaria una funcion fibonacci para determinar la cantidad de regalos o carbon.
+en la clase regalo agregaria un enum donde le daria valores al "control_parental" A = todo publico, B = mayores de 12 años, C = Mayores de 16 años y D = Mayores de edad, se validaria al buscar un niño y leer la edad si el regalo que se agrego excede la edad del niño buscado el regalo se eliminaria de la lista y se procederia a darle un regalo con la edad requerida.
+
+
